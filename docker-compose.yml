@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+
+  client:
+    container_name: as_client
+    build: ./client
+    volumes:
+      - ./:/usr/src/app
+      - client_node_modules:/usr/src/app/node_modules
+    command: bash -c "cd /usr/src/app && touch npm-debug.log && tail -f npm-debug.log"
+    expose:
+      - 4200
+    networks:
+      back-tier:
+
+volumes:
+  client_node_modules:
+
+networks:
+  back-tier:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/24
