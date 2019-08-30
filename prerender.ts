@@ -12,8 +12,7 @@ const indexHtml = fs.readFileSync(path.join(distFolder, 'index.html')).toString(
 
 // List of all routes we want to prerender
 const routes = [
-  '/',
-  '/test'
+  '/'
 ];
 
 // Run the render process for each of the routes
