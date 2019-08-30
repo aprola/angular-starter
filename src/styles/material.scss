@@ -1,0 +1,48 @@
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the base styles for Angular Material common. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+$aprola-app-primary: mat-palette($mat-indigo);
+$aprola-app-accent:  mat-palette($mat-amber, A200, A100, A400);
+$aprola-app-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$aprola-app-theme: mat-light-theme($aprola-app-primary, $aprola-app-accent, $aprola-app-warn);
+
+@include mat-core-theme($aprola-app-theme);
+//@include mat-autocomplete-theme($aprola-app-theme);
+//@include mat-button-theme($aprola-app-theme);
+//@include mat-button-toggle-theme($aprola-app-theme);
+//@include mat-card-theme($aprola-app-theme);
+//@include mat-checkbox-theme($aprola-app-theme);
+//@include mat-chips-theme($aprola-app-theme);
+//@include mat-table-theme($aprola-app-theme);
+//@include mat-datepicker-theme($aprola-app-theme);
+//@include mat-dialog-theme($aprola-app-theme);
+@include mat-ripple-theme($aprola-app-theme);
+//@include mat-expansion-panel-theme($aprola-app-theme);
+//@include mat-form-field-theme($aprola-app-theme);
+//@include mat-grid-list-theme($aprola-app-theme);
+//@include mat-icon-theme($aprola-app-theme);
+//@include mat-input-theme($aprola-app-theme);
+//@include mat-list-theme($aprola-app-theme);
+//@include mat-menu-theme($aprola-app-theme);
+//@include mat-paginator-theme($aprola-app-theme);
+//@include mat-progress-bar-theme($aprola-app-theme);
+//@include mat-progress-spinner-theme($aprola-app-theme);
+//@include mat-radio-theme($aprola-app-theme);
+//@include mat-select-theme($aprola-app-theme);
+//@include mat-sidenav-theme($aprola-app-theme);
+//@include mat-slide-toggle-theme($aprola-app-theme);
+//@include mat-slider-theme($aprola-app-theme);
+//@include mat-tabs-theme($aprola-app-theme);
+//@include mat-toolbar-theme($aprola-app-theme);
+//@include mat-tooltip-theme($aprola-app-theme);
+//@include mat-snack-bar-theme($aprola-app-theme);
+//@include mat-stepper-theme($aprola-app-theme);
