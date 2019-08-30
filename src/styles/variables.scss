@@ -1,0 +1,27 @@
+@import "media";
+@import "bootstrap_sass_variables";
+
+
+$screen-xs:                  480px !default;
+$screen-sm:                  768px !default;
+$screen-md:                  1200px !default;
+$screen-lg:                  1366px !default;
+
+
+
+// Bourbon Neat Breakpoints
+$media-only-mobile: new-breakpoint(max-width $screen-xs $grid-columns);
+$media-tablet-and-below: new-breakpoint(max-width $screen-sm $grid-columns);
+$media-tablet-and-above: new-breakpoint(min-width $screen-sm $grid-columns);
+$media-desktop-and-above: new-breakpoint(min-width $screen-md $grid-columns);
+$media-desktop-and-below: new-breakpoint(max-width $screen-lg $grid-columns);
+$media-large-desktop-and-above: new-breakpoint(min-width $screen-lg $grid-columns);
+
+
+$primary:             darken(#428bca, 6.5%);
+$success:             #5cb85c;
+$info:                #5bc0de;
+$warning:             #f0ad4e;
+$danger:              #d9534f;
+$state-info-text:     #428bca;
+$link-color:          darken(#428bca, 6.5%);
