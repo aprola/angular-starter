@@ -4,15 +4,13 @@ services:
 
   client:
     container_name: as_client
-    build: ./client
+    build: ./
     volumes:
       - ./:/usr/src/app
       - client_node_modules:/usr/src/app/node_modules
     command: bash -c "cd /usr/src/app && touch npm-debug.log && tail -f npm-debug.log"
-    expose:
-      - 4200
-    networks:
-      back-tier:
+    ports:
+      - "4200:4200"
 
 volumes:
   client_node_modules:
